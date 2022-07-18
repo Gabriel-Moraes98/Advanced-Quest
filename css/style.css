@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background:url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color:hsl(257, 40%, 49%) ; 
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.logo{
+    padding: 2%;
+}
+
+.middle-informations{
+    display: flex;
+    padding: 15px;
+    text-align: left;
+    color: #fff;
+}
+
+.text-informations{
+    padding: 15px;
+    margin: 15px;
+}
+
+.text-informations h1{
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.text-informations p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    line-height: 33px;
+}
+
+.text-informations button{
+    padding: 16px 60px;
+    font-size: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-informations button:hover{
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 50px rgb(162, 74, 162);
+}
+.social{
+    margin-bottom: 36px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+ 
+ .social button{
+    margin-left: 20px;
+    background-color:hsl(257, 40%, 49%) ; 
+    border-radius: 30px;
+    border: #fff solid;
+    transition: 0.2s ease-in-out;
+}
+.social button:hover{
+    border: solid hsl(300, 69%, 71%);
+
+}
+.social i{
+    font-size: 25px;
+    padding: 15px;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.social i:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+@media(max-width:800px){
+    .container{
+        height: 100%;
+    }
+    .container .logo img{
+        width: 46%;
+        margin: 2%;
+    }
+    .middle-informations{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-informations .img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .middle-informations img{
+        width: 80%;
+    }
+    .text-informations{
+        text-align:center;
+    }
+    .text-informations h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .text-informations p{
+        font-size: 0.9rem;
+        line-height: 19px;
+        margin-bottom: 15px;
+    }
+    .text-informations button{
+        font-size: 1rem;
+        color: hsl(257, 40%, 49%) ;
+        padding: 3% 20%;
+    }
+
+    .social{
+        width: 300px;
+       text-align: center;
+       justify-content: center;
+       margin-bottom: 0;
+    }
+    .social button i{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
